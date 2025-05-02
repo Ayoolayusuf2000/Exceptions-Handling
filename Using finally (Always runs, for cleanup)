@@ -1,0 +1,6 @@
+try:
+    coffee = order_coffee("large cappuccino")
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    print("Thanks for visiting!")  # Runs whether order succeeds or fails
