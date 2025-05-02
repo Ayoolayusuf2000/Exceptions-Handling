@@ -1,0 +1,6 @@
+try:
+    coffee = order_coffee("large cappuccino")
+except OutOfMilkError:
+    print("No milk! Black coffee?")
+else:
+    print(f"Here’s your {coffee}!")  # Only runs if no exception
