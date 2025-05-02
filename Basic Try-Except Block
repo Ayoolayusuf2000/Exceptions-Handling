@@ -1,0 +1,9 @@
+try:
+    coffee = order_coffee("large cappuccino")  # Risky operation
+    print(f"Enjoy your {coffee}!")
+except OutOfMilkError:
+    print("Sorry, we’re out of milk. Would you like a black coffee instead?")
+except CoffeeMachineError:
+    print("Machine broken! Free tea instead?")
+except Exception as e:  # Catch-all for unexpected errors
+    print(f"Oops! Something went wrong: {e}")
